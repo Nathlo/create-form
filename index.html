@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tell Me More</title>
+    </head>
+    <body>
+        <head>
+            <h1>Talking About Yourself!</h1>        
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi quasi sed dolores doloremque quisquam hic, 
+            tenetur facere quibusdam expedita, iusto eius voluptate est accusantium! Corrupti dolor itaque molestiae inventore unde, 
+            necessitatibus quam, quisquam, maxime amet nisi quibusdam praesentium esse nemo.
+            </p>
+        </head>
+        
+        <section id="form">
+            <form action="/index.html" method="POST">
+                <h1>Your Portrait</h1>
+
+                <section class="user-details">
+                    <label for="name">Full Name</label>
+                    <input type="text" name="fullname" value="John Doe" id="name">
+                    <br>
+                    <label for="userpw">Password</label>
+                    <input type="password" name="password" id="userpw">
+                </section>
+                
+                <hr>
+                <section class="jobs">
+                    <label for="num-jobs">How many jobs have you got so far?</label>
+                    <br>
+                    <input type="number" step="1" name ="jobs" id="num-jobs" >
+                </section>
+                
+                <hr>
+                <section class="work-exp">
+                    <label for="grade">How would you grade your work experience?</label>
+                    <br>
+                    <span>Very Bad</span>
+                    <input type="range" step="1" min="0" max="100" name="grade" id="grade">
+                    <span>Excellent</span>
+                </section>
+                
+                <hr>
+                <section class="job-sector">
+                    <p>What type of job you are working in?</p>
+                    <label for="private">A Private Company</label>
+                    <input type="checkbox" name="sector" id="private">
+                    <br>
+                    <label for="public">A Public Organisation</label>
+                    <input type="checkbox" name="sector" id="public">
+                    <br>
+                    <label for="sole-trader">I Am a Sole-trader</label>
+                    <input type="checkbox" name="sector" id="sole-trader">
+                    <br>
+                </section>
+
+                <hr>
+                <section>
+                    <p>Would you like to change job?</p>
+                    <label for="one">YES</label>
+                    <input type="radio" name="answer" id="one">
+                    <br>
+                    <label for="zero">NO</label>
+                    <input type="radio" name="answer" id="zero">
+                </section>
+
+                <hr>
+                <section class="meeting-time">
+                    <label for="">When do you have most your meetings?</label>
+                    <select name="meetings" id="meetings">
+                        <option value="morning">Early Morning</option>
+                        <option value="lunch">Before Lunch</option>
+                        <option value="afternoon">Early Afternoon</option>
+                        <option value="evening">Late Afternoon</option>
+                    </select>
+                </section>
+
+                <hr>
+                <section class="city-work">
+                    <label for="city">Ideal city in Europe to work?</label>
+                    <input type="text" list="cities" name="city" id="city">
+                
+                    <datalist id="cities">
+                        <option value="Paris"></option>
+                        <option value="London"></option>
+                        <option value="Amsterdam"></option>
+                        <option value="Madrid"></option>
+                        <option value="Rome"></option>
+                        <option value="Lisbon"></option>
+                        <option value="Prague"></option>
+                        <option value="Oslo"></option>
+                        <option value="Stockholm"></option>
+                        <option value="Berlin"></option>
+                    </datalist>
+                </section>
+
+                <hr>
+                <section class="cover-letter">
+                    <label for="">What's your profesional background?</label>
+                    <br>
+                    <textarea name="letter" id="letter" cols="40" rows="8">Fell free to tell us more about you!</textarea>
+                </section>
+
+                <hr>
+                <section class="submission">
+                    <input type="submit" value="Send">
+                </section>
+
+            </form>
+        </section>
+    
+    
+    
+    
+    </body>
+
+
+
+
+
+
+
+</html>
